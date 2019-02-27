@@ -4,3 +4,10 @@ $primary:                           rgba(#f4b541, 0.99); // This converts hexade
   // Components
 $navbar-dark-hover-color:           $primary;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$primary}' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+$carousel-caption-width:             100%;
+
+.carousel-caption{
+  bottom: 0 !important;
+  background: rgba(#000000,.7);
+}
