@@ -1,4 +1,4 @@
-.carousel-caption{bottom:0!important;background:rgba(0,0,0,.7)}/*!
+.carousel-caption{bottom:0!important;background:rgba(0,0,0,.7)}.gallery-item{position:relative;cursor:pointer}.gallery-item .gallery-item--overlay{position:absolute;background:rgba(255,187,61,.99);height:100%;width:100%;opacity:0;transition:opacity .5s}.gallery-item:hover .gallery-item--overlay{opacity:.9}/*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
