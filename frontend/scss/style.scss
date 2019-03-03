@@ -1,2 +1,11 @@
-@import 'custom';
-@import 'bootstrap';
+// bootstrap
+@import 'custom'; // Custom bootstrap variables
+@import 'bootstrap'; // Bootstrap
+// end of bootstrap
+
+// fontawesome
+@import 'brands';
+@import 'fontawesome';
+@import 'regular';
+@import 'solid';
+// end of fontawesome
