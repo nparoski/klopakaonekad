@@ -85,6 +85,11 @@ gulp.task('javascript', function () {
       .pipe(gulp.dest('../web/javascript'));
 });
 
+// js
+gulp.task('js',function(){
+  gulp.src('./javascript/**/*.js')
+      .pipe(gulp.dest('../web/javascript'))
+});
 var browserSync = require('browser-sync').create();
 
 // Static server
@@ -95,6 +100,7 @@ gulp.task('static', function() {
     }
   });
   gulp.watch("./scss/**/*.scss", ['sass']);
+  gulp.watch("./javascript/**/*.js", ['js']);
   gulp.watch("../web/**/*.{html,css,js}").on('change', browserSync.reload);
 });
 
