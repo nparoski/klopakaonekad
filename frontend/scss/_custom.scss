@@ -32,3 +32,24 @@ $carousel-caption-width:             100%;
     }
   }
 }
+
+#menu-output ol{
+  column-count: 1;
+  -webkit-column-gap: 15px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 15px; /* Firefox */
+  column-gap: 15px;
+  
+  @media (min-width: 576px) {
+    
+  }
+  @media (min-width: 768px) {
+    column-count: 2;
+  }
+  @media (min-width: 992px) {
+    // width: 960px;
+  }
+  @media (min-width: 1200px) {
+    width: 900px;
+  }
+
+}
