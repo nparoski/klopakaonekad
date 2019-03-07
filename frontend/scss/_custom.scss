@@ -51,5 +51,15 @@ $carousel-caption-width:             100%;
   @media (min-width: 1200px) {
     width: 900px;
   }
+}
 
+#map{
+  height: 300px;
+
+  @media (min-width: 576px) {
+    height: 400px;
+  }
+  @media (min-width: 768px) {
+    height: 530px;
+  }
 }

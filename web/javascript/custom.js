@@ -38,3 +38,11 @@ menu.addEventListener('click', function (e) {
       
   }
 });
+// maps
+function initMap() {
+  var klopakaokodkuce = { lat: 45.2476600, lng: 19.8251806 };
+  var map = new google.maps.Map(document.getElementById('map'),{ 
+      center: klopakaokodkuce, 
+      zoom: 17
+  });
+}
