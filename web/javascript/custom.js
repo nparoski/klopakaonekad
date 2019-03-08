@@ -49,7 +49,7 @@ function initMap() {
 }
 
 // gallery-lightbox
-const gallery = document.getElementById('gallery');
+const gallery = document.getElementById('gallery-main');
 const carouselInner = document.getElementById('carousel-inner');
 
 gallery.addEventListener('click', function(e){
@@ -70,3 +70,17 @@ gallery.addEventListener('click', function(e){
     }
   })
 })
+// smooth scrolling
+$(document).ready(function () {
+  $("#navbarSupportedContent a").on('click', function (e) {
+    if (this.hash !== "") {
+      e.preventDefault();
+      let hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+        window.location.hash = hash;
+      });
+    }
+  });
+});
