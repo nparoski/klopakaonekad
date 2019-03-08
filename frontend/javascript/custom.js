@@ -38,6 +38,7 @@ menu.addEventListener('click', function (e) {
       
   }
 });
+
 // maps
 function initMap() {
   var klopakaokodkuce = { lat: 45.2476600, lng: 19.8251806 };
@@ -46,3 +47,26 @@ function initMap() {
       zoom: 17
   });
 }
+
+// gallery-lightbox
+const gallery = document.getElementById('gallery');
+const carouselInner = document.getElementById('carousel-inner');
+
+gallery.addEventListener('click', function(e){
+  let clickedImg;
+  if (e.target.classList.contains('gallery-item--overlay')){
+    clickedImg = e.target.nextElementSibling.src
+  }
+  else if(!e.target.classList.contains('gallery-item--overlay')){
+    clickedImg = e.target.parentElement.nextElementSibling.src
+  }
+
+  Array.from(carouselInner.children).forEach(function (item) {
+    if(item.classList.contains('active')){
+      item.classList.remove('active')
+    }
+    if (clickedImg === item.firstElementChild.src){
+      item.classList.add('active')
+    }
+  })
+})
