@@ -1,38 +1,38 @@
-const menu = document.getElementById('menu-main');
+const menuControls = document.getElementById('menu-controls');
 const output = document.getElementById('menu-output');
 const menuCollection = document.querySelectorAll('.menu-item');
 
-function menuCheck(mealType){
+function menuFilter(mealCategory){
   menuCollection.forEach(function (meal) {
-    if (meal.classList.contains(mealType) === true) {
+    if (meal.classList.contains(mealCategory) === true) {
       meal.classList.remove('d-none');
     }
-    else if (meal.classList.contains(mealType) === false) {
+    else if (meal.classList.contains(mealCategory) === false) {
       meal.classList.add('d-none');
     }
   });
 }
 
-menu.addEventListener('click', function (e) {
+menuControls.addEventListener('click', function (e) {
   switch (e.target.id) {
     case "menu-all":
       menuCollection.forEach(function(meal){
-        if(meal.classList.contains("menu-item") == true){
+        if(meal.classList.contains("menu-item") === true){
           meal.classList.remove('d-none');
         }
       });
     break;
     case "menu-cooked":
-      menuCheck('menu-cooked');
+      menuFilter('menu-cooked');
     break;
     case "menu-baked":
-      menuCheck('menu-baked');
+      menuFilter('menu-baked');
     break;
     case "menu-side-dish":
-      menuCheck('menu-side-dish');
+      menuFilter('menu-side-dish');
     break;
     case "menu-dessert":
-      menuCheck('menu-dessert');
+      menuFilter('menu-dessert');
     break;
     default:
       
