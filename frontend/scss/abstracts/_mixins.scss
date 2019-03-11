@@ -1,0 +1,6 @@
+// Generate shadow on element
+@mixin boxShadow($xOffset,$yOffset,$blur,$spread,$color) {
+  -webkit-box-shadow: $xOffset $yOffset $blur $spread $color;
+  -moz-box-shadow: $xOffset $yOffset $blur $spread $color;
+  box-shadow: $xOffset $yOffset $blur $spread $color;
+}

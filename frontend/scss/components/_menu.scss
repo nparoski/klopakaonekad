@@ -1,0 +1,13 @@
+#menu-output ol{
+  column-count: 1;
+  -webkit-column-gap: 15px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 15px; /* Firefox */
+  column-gap: 15px;
+
+  @include media-breakpoint-up(md) { 
+    column-count: 2;
+  }
+  @include media-breakpoint-up(lg) { 
+    width: 900px;
+  }
+}

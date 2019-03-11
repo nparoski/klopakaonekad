@@ -1,0 +1,17 @@
+.gallery-item{
+  position: relative;
+  cursor: pointer;
+  .gallery-item--overlay{
+    position: absolute;
+    background: $primary;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  &:hover{
+    .gallery-item--overlay{
+      opacity: .9;
+    }
+  }
+}
