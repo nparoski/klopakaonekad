@@ -2,7 +2,10 @@ const menuControls = document.getElementById('menu-controls');
 const output = document.getElementById('menu-output');
 const menuCollection = document.querySelectorAll('.menu-item');
 
+// Filters menu dishes to parameter and swaps menu control button classes with 'swapMenuBtnClasses()'
 function menuFilter(mealCategory){
+  swapMenuBtnClasses(mealCategory);
+
   menuCollection.forEach(function (meal) {
     if (meal.classList.contains(mealCategory) === true) {
       meal.classList.remove('d-none');
@@ -13,9 +16,28 @@ function menuFilter(mealCategory){
   });
 }
 
+// Swaps btn-primary and btn-outline-primary classes on menu control buttons
+function swapMenuBtnClasses(buttonId){
+  let button = document.getElementById(buttonId);
+
+  if (button.classList.contains('btn-outline-primary')) {
+    button.classList.add('btn-primary');
+    button.classList.remove('btn-outline-primary');
+  }
+}
+
 menuControls.addEventListener('click', function (e) {
+// Resets classes on menu control buttons whenever u click on menu control button
+  if(e.target.id !== 'menu-controls'){
+    Array.from(menuControls.children).forEach(function (button) {
+      button.classList.remove('btn-primary');
+      button.classList.add('btn-outline-primary');
+    })
+  }
+  
   switch (e.target.id) {
     case "menu-all":
+      swapMenuBtnClasses('menu-all')
       menuCollection.forEach(function(meal){
         if(meal.classList.contains("menu-item") === true){
           meal.classList.remove('d-none');
