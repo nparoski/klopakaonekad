@@ -1,4 +1,5 @@
-#menu-output ol{
+#menu-output ul{
+  list-style: none;
   @include gridColCount(1);
   @include gridColGap(15px);
 
@@ -6,6 +7,6 @@
     @include gridColCount(2);
   }
   @include media-breakpoint-up(lg) { 
-    width: 900px;
+    width: 700px;
   }
 }
