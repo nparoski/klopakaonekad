@@ -94,7 +94,7 @@ gallery.addEventListener('click', function(e){
 })
 // smooth scrolling
 $(document).ready(function () {
-  $("#navbarSupportedContent a").on('click', function (e) {
+  $(".smooth-scroll").on('click', function (e) {
     if (this.hash !== "") {
       e.preventDefault();
       let hash = this.hash;
