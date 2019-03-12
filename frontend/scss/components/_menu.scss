@@ -1,12 +1,12 @@
 #menu-output ul{
   list-style: none;
-  @include gridColCount(1);
-  @include gridColGap(15px);
+  // @include gridColCount(1);
+  // @include gridColGap(15px);
 
   @include media-breakpoint-up(md) { 
-    @include gridColCount(2);
+    // @include gridColCount(2);
   }
   @include media-breakpoint-up(lg) { 
-    width: 700px;
+    // width: 700px;
   }
 }
