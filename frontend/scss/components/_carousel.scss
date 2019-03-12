@@ -1,6 +1,8 @@
-.carousel-item{
+#carouselLanding{
+  .carousel-item{
     @include media-breakpoint-up(md) { 
     height: calc(100vh - 67px);
+    }
   }
 }
 
