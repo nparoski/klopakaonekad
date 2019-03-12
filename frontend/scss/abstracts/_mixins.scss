@@ -4,3 +4,15 @@
   -moz-box-shadow: $xOffset $yOffset $blur $spread $color;
   box-shadow: $xOffset $yOffset $blur $spread $color;
 }
+
+@mixin gridColCount($count) {
+  -webkit-column-count: $count; /* Chrome, Safari, Opera */
+  -moz-column-count: $count; /* Firefox */
+  column-count: $count;
+}
+
+@mixin gridColGap($gap) {
+  -webkit-column-gap: $gap; /* Chrome, Safari, Opera */
+  -moz-column-gap: $gap; /* Firefox */
+  column-gap: $gap;
+}
