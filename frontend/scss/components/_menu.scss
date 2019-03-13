@@ -2,7 +2,15 @@
   list-style: none;
   // @include gridColCount(1);
   // @include gridColGap(15px);
-
+  li{
+    font-size: $h5-font-size;
+    font-weight: 500;
+    line-height: 1.7;
+    span{
+      color:$secondary;
+      margin-left:1rem;
+    }
+  }
   @include media-breakpoint-up(md) { 
     // @include gridColCount(2);
   }
