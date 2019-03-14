@@ -25,3 +25,31 @@
        url('../webfonts/coiny-v4-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../webfonts/coiny-v4-latin-ext-regular.svg#Coiny') format('svg'); /* Legacy iOS */
 }
+
+/* poppins-regular - latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/poppins-v6-latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+       url('../webfonts/poppins-v6-latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/poppins-v6-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/poppins-v6-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/poppins-v6-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../webfonts/poppins-v6-latin-ext-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/open-sans-v15-latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../webfonts/open-sans-v15-latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/open-sans-v15-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/open-sans-v15-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/open-sans-v15-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../webfonts/open-sans-v15-latin-ext-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
