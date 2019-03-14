@@ -1,7 +1,5 @@
 #menu-output ul{
   list-style: none;
-  // @include gridColCount(1);
-  // @include gridColGap(15px);
   li{
     font-size: $h5-font-size;
     font-weight: 500;
@@ -10,11 +8,5 @@
       color:$secondary;
       margin-left:1rem;
     }
-  }
-  @include media-breakpoint-up(md) { 
-    // @include gridColCount(2);
-  }
-  @include media-breakpoint-up(lg) { 
-    // width: 700px;
   }
 }
