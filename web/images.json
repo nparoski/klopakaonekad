@@ -1,0 +1,12 @@
+{
+  "images":[
+    {
+      "id": 1,
+      "src": "image.jpeg"
+    },
+    {
+      "id": 2,
+      "src": "img2.jpeg"
+    }
+  ]
+}

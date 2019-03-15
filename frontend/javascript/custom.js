@@ -124,3 +124,38 @@ window.addEventListener("scroll",function(){
   else
     toTopBtn.classList.remove('d-block')
 })
+
+function createGalleryItem(){
+  const galleryMain = document.getElementById('gallery-main')
+
+  let galleryItem = document.createElement("div");
+  galleryItem.classList.add("gallery-item", "font-primary", "col-6", "col-md-3")
+
+  let galleryItemOverlay = document.createElement("div")
+  galleryItemOverlay.classList.add("gallery-item--overlay", "d-flex", "justify-content-center", "align-items-center")
+  galleryItemOverlay.setAttribute("data-toggle", "modal")
+  galleryItemOverlay.setAttribute("data-target", ".gallery-modal")
+  galleryItem.appendChild(galleryItemOverlay)
+
+  let galleryItemOverlayText = document.createElement("h1")
+  galleryItemOverlayText.textContent = "image.text"
+  galleryItemOverlayText.classList.add("h3")
+  galleryItemOverlay.appendChild(galleryItemOverlayText);
+
+  let galleryItemImage = document.createElement('img')
+  galleryItemImage.classList.add("d-block", "w-100")
+  galleryItemImage.setAttribute("src", "image.src")
+  galleryItemImage.setAttribute("alt", "image.alt")
+  galleryItem.appendChild(galleryItemImage)
+}
+
+fetch('../images.json').then(response => {
+  return response.json();
+}).then(data => {
+  // Work with JSON data here
+  data.images.forEach(function(image){
+    console.log(image);
+  })
+}).catch(err => {
+  console.log("There was an error loading .json file, please try again..")
+});
