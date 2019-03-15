@@ -72,7 +72,7 @@ function initMap() {
 
 // gallery-lightbox
 const gallery = document.getElementById('gallery-main');
-const carouselInner = document.getElementById('carousel-inner');
+const modalCarouselInner = document.getElementById('carousel-inner');
 
 gallery.addEventListener('click', function(e){
   let clickedImg;
@@ -83,7 +83,7 @@ gallery.addEventListener('click', function(e){
     clickedImg = e.target.parentElement.nextElementSibling.src
   }
 
-  Array.from(carouselInner.children).forEach(function (item) {
+  Array.from(modalCarouselInner.children).forEach(function (item) {
     if(item.classList.contains('active')){
       item.classList.remove('active')
     }
@@ -144,9 +144,34 @@ function createGalleryItem(){
 
   let galleryItemImage = document.createElement('img')
   galleryItemImage.classList.add("d-block", "w-100")
-  galleryItemImage.setAttribute("src", "image.src")
+  galleryItemImage.setAttribute("src", "images/gallery-1.jpg")
   galleryItemImage.setAttribute("alt", "image.alt")
   galleryItem.appendChild(galleryItemImage)
+  
+  galleryMain.appendChild(galleryItem);
+}
+
+function createModalItem(){
+  let carouselItem = document.createElement('div');
+  carouselItem.classList.add("carousel-item");
+  
+  let carouselItemImage = document.createElement('img');
+  carouselItemImage.setAttribute("src", "images/gallery-1.jpg");
+  carouselItemImage.setAttribute("alt", "image.alt");
+  carouselItemImage.classList.add("d-block","w-100")
+  carouselItem.appendChild(carouselItemImage)
+
+  let carouselItemCaption = document.createElement('div');
+  carouselItemCaption.classList.add("carousel-caption")
+  carouselItem.appendChild(carouselItemCaption)
+
+  let carouselItemCaptionText = document.createElement('p')
+  carouselItemCaptionText.classList.add("m-2")
+  carouselItemCaptionText.textContent = "image.caption"
+  carouselItemCaption.appendChild(carouselItemCaptionText);
+
+  modalCarouselInner.appendChild(carouselItem)
+  console.log(carouselItem)
 }
 
 fetch('../images.json').then(response => {
