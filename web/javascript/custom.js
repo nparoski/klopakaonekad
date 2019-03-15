@@ -72,7 +72,7 @@ function initMap() {
 
 // gallery-lightbox
 const gallery = document.getElementById('gallery-main');
-const modalCarouselInner = document.getElementById('carousel-inner');
+const modalCarouselInner = document.getElementById('modal-carousel-inner');
 
 gallery.addEventListener('click', function(e){
   let clickedImg;
@@ -125,7 +125,7 @@ window.addEventListener("scroll",function(){
     toTopBtn.classList.remove('d-block')
 })
 
-function createGalleryItem(){
+function createGalleryItem(imageTitle,imageSrc,imageAlt){
   const galleryMain = document.getElementById('gallery-main')
 
   let galleryItem = document.createElement("div");
@@ -138,26 +138,26 @@ function createGalleryItem(){
   galleryItem.appendChild(galleryItemOverlay)
 
   let galleryItemOverlayText = document.createElement("h1")
-  galleryItemOverlayText.textContent = "image.text"
+  galleryItemOverlayText.textContent = `${imageTitle}`
   galleryItemOverlayText.classList.add("h3")
   galleryItemOverlay.appendChild(galleryItemOverlayText);
 
   let galleryItemImage = document.createElement('img')
   galleryItemImage.classList.add("d-block", "w-100")
-  galleryItemImage.setAttribute("src", "images/gallery-1.jpg")
-  galleryItemImage.setAttribute("alt", "image.alt")
+  galleryItemImage.setAttribute("src", `${imageSrc}`)
+  galleryItemImage.setAttribute("alt", `${imageAlt}`)
   galleryItem.appendChild(galleryItemImage)
   
   galleryMain.appendChild(galleryItem);
 }
 
-function createModalItem(){
+function createModalItem(imageCaption,imageSrc,imageAlt){
   let carouselItem = document.createElement('div');
   carouselItem.classList.add("carousel-item");
   
   let carouselItemImage = document.createElement('img');
-  carouselItemImage.setAttribute("src", "images/gallery-1.jpg");
-  carouselItemImage.setAttribute("alt", "image.alt");
+  carouselItemImage.setAttribute("src", `${imageSrc}`);
+  carouselItemImage.setAttribute("alt", `${imageAlt}`);
   carouselItemImage.classList.add("d-block","w-100")
   carouselItem.appendChild(carouselItemImage)
 
@@ -167,7 +167,7 @@ function createModalItem(){
 
   let carouselItemCaptionText = document.createElement('p')
   carouselItemCaptionText.classList.add("m-2")
-  carouselItemCaptionText.textContent = "image.caption"
+  carouselItemCaptionText.textContent = `${imageCaption}`
   carouselItemCaption.appendChild(carouselItemCaptionText);
 
   modalCarouselInner.appendChild(carouselItem)
@@ -178,8 +178,9 @@ fetch('../images.json').then(response => {
   return response.json();
 }).then(data => {
   // Work with JSON data here
-  data.images.forEach(function(image){
-    console.log(image);
+  data.images.forEach(function (image) {
+    createGalleryItem(image.title, image.src, image.alt);
+    createModalItem(image.caption, image.src, image.alt);
   })
 }).catch(err => {
   console.log("There was an error loading .json file, please try again..")

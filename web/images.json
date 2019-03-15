@@ -1,12 +1,60 @@
 {
-  "images":[
+  "images": [
     {
       "id": 1,
-      "src": "image.jpeg"
+      "title": "Pica",
+      "alt": "Pizza",
+      "src": "../images/gallery-9.jpg",
+      "caption": "Pica Kaprićoza"
     },
     {
       "id": 2,
-      "src": "img2.jpeg"
+      "title": "Čiz kejk",
+      "alt": "Čiz kejk torta",
+      "src": "../images/gallery-10.jpg",
+      "caption": "Čiz kejk torta šumsko voće"
+    },
+    {
+      "id": 3,
+      "title": "Svinjska rebarca",
+      "alt": "Svinjska rebarca",
+      "src": "../images/gallery-11.jpg",
+      "caption": "Svinjska rebarca u bbq sosu"
+    },
+    {
+      "id": 4,
+      "title": "Vanil torta",
+      "alt": "Vanil torta",
+      "src": "../images/gallery-12.jpg",
+      "caption": "Vanil torta od borovnica"
+    },
+    {
+      "id": 5,
+      "title": "Piletina sa povrćem",
+      "alt": "Piletina sa povrćem",
+      "src": "../images/gallery-13.jpg",
+      "caption": "Piletina sa svežim povrćem"
+    },
+    {
+      "id": 6,
+      "title": "Kineska hrana",
+      "alt": "Kineska hrana",
+      "src": "../images/gallery-14.jpg",
+      "caption": "Belo meso na kineski način"
+    },
+    {
+      "id": 7,
+      "title": "Jafa kolač",
+      "alt": "Jafa kolač",
+      "src": "../images/gallery-15.jpg",
+      "caption": "Jafa kolač"
+    },
+    {
+      "id": 8,
+      "title": "Hamburger",
+      "alt": "Hamburger",
+      "src": "../images/gallery-16.jpg",
+      "caption": "Hamburger sa pomfritom"
     }
   ]
 }
