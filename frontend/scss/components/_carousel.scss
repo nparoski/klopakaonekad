@@ -1,5 +1,5 @@
 #carouselLanding{
-  .carousel-item{
+  .carousel-item img{
     @include media-breakpoint-up(md) { 
     height: calc(100vh - 67px);
     }
