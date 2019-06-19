@@ -1,12 +1,19 @@
-#carouselLanding{
-  .carousel-item img{
-    @include media-breakpoint-up(md) { 
-    height: calc(100vh - 67px);
+#carouselLanding {
+  .carousel-item img {
+    @include media-breakpoint-up(md) {
+      height: calc(100vh - 67px);
     }
   }
 }
 
-.carousel-caption{
+.carousel-caption {
   bottom: 0 !important;
-  background: rgba(#000000,.7);
+  background: rgba(#000000, 0.7);
+
+  @include media-breakpoint-down(md) {
+    padding: 10px 0;
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
