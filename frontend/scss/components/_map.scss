@@ -1,9 +1,10 @@
-#map{
+#map,
+#map iframe {
   height: 300px;
-  @include media-breakpoint-up(sm) { 
+  @include media-breakpoint-up(sm) {
     height: 400px;
-   }
-  @include media-breakpoint-up(md) { 
+  }
+  @include media-breakpoint-up(md) {
     height: 530px;
-   }
+  }
 }
