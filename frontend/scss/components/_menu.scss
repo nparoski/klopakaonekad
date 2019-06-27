@@ -1,13 +1,13 @@
-#menu-output ul{
+#menu-output ul {
   list-style: none;
-  li{
+  li {
     font-size: 1.25rem;
-    font-family: 'Baloo';
+    font-family: "Baloo";
     line-height: 1.5;
-    span{
-      color:rgba($white,.6);
+    span {
+      color: rgba($white, 0.6);
       font-size: 1.5rem;
-      margin-left:1rem;
+      margin-left: 1rem;
     }
   }
 }
