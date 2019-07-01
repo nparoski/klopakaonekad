@@ -6,5 +6,5 @@
     $msg = $_POST['message'];
     $header = "From: ".$name.", Adress: ".$email;
 
-    mail("paroskidev@gmail.com",$subject,$msg,$header);
+    mail("info@koddzona.rs",$subject,$msg,$header);
   }
