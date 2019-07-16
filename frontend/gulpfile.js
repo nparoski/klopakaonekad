@@ -89,16 +89,18 @@ function javascript() {
     "./node_modules/featherlight/src/featherlight.gallery.js",
     "./javascript/custom.js"
   ];
-  return gulp
-    .src(jsOrder)
-    .pipe(concat("main.js"))
-    .pipe(gulp.dest("../web/javascript"))
-    .pipe(stripDebug())
-    .pipe(terser()) // Minifies all javascript including es6
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("../web/javascript"))
-    .pipe(gzip({ gzipOptions: { level: 9 } }))
-    .pipe(gulp.dest("../web/javascript"));
+  return (
+    gulp
+      .src(jsOrder)
+      .pipe(concat("main.js"))
+      .pipe(gulp.dest("../web/javascript"))
+      // .pipe(stripDebug())
+      .pipe(terser()) // Minifies all javascript including es6
+      .pipe(rename({ suffix: ".min" }))
+      .pipe(gulp.dest("../web/javascript"))
+      .pipe(gzip({ gzipOptions: { level: 9 } }))
+      .pipe(gulp.dest("../web/javascript"))
+  );
 }
 
 // Static server

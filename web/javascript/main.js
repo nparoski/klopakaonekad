@@ -18533,6 +18533,57 @@ return Popper;
 //   });
 // }
 
+function createMessage(type, text) {
+  let formMessage = document.createElement("p");
+  formMessage.id = "statusMessage";
+  if (!document.getElementById("statusMessage")) {
+    if (type === "danger") {
+      formMessage.classList.add("bg-danger", "rounded", "text-center");
+      formMessage.textContent = `${text}`;
+    } else if (type === "success") {
+      formMessage.classList.add("bg-success", "rounded", "text-center");
+      formMessage.textContent = `${text}`;
+    }
+  } else {
+    formMessage.classList.add("bg-warning", "rounded", "text-center");
+    formMessage.textContent = "Došlo je do greške, pošaljite nam mejl.";
+  }
+  return formMessage;
+}
+
+function removeMessage(delay = 3000) {
+  setTimeout(() => {
+    const msg = document.getElementById("statusMessage");
+    if (msg !== null) {
+      msg.remove();
+    }
+  }, delay);
+}
+
+// Ajax to php send mail
+
+const btnSendMail = document.getElementById("btn-send-mail");
+const formInfo = document.getElementById("form-info");
+btnSendMail.addEventListener("click", e => {
+  e.preventDefault();
+
+  fetch("../php/sendMail.php")
+    .then(result => {
+      if (result.ok) {
+        formInfo.appendChild(
+          createMessage("success", "Uspešno ste poslali poruku.")
+        );
+      } else {
+        formInfo.appendChild(
+          createMessage("danger", "Došlo je do greške, pokušajte ponovo.")
+        );
+      }
+      removeMessage(5000);
+    })
+    .catch(error => {
+      formInfo.appendChild(createMessage());
+    });
+});
 // gallery-lightbox
 const gallery = document.getElementById("gallery-main");
 const modalCarouselInner = document.getElementById("modal-carousel-inner");
