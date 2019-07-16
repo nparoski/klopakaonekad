@@ -1,11 +1,5 @@
 <?php
-  if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = "Mejl sa sajta";
-    $msg = $_POST['message'];
-    $header = "From: ".$name.", Adress: ".$email;
-
-    mail("info@koddzona.rs",$subject,$msg,$header);
-    header("location: ../index.html?mailsent");
-  }
+  $input = file_get_contents('php://input');
+  $data = json_decode($input);
+  $header = "From: " . $data->name . ", E-mail: " . $data->email;
+  mail("info@koddzona.rs","Poruka sa veb stranice",$data->msg,$header);
