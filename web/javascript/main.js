@@ -18566,13 +18566,27 @@ const btnSendMail = document.getElementById("btn-send-mail");
 const formInfo = document.getElementById("form-info");
 btnSendMail.addEventListener("click", e => {
   e.preventDefault();
+  let data = {
+    name: document.getElementById("cfName").value,
+    msg: document.getElementById("cfMsg").value,
+    email: document.getElementById("cfMail").value
+  };
 
-  fetch("../php/sendMail.php")
+  fetch("../php/sendMail.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
     .then(result => {
       if (result.ok) {
         formInfo.appendChild(
           createMessage("success", "Uspešno ste poslali poruku.")
         );
+        document.getElementById("cfName").value = "";
+        document.getElementById("cfMsg").value = "";
+        document.getElementById("cfMail").value = "";
       } else {
         formInfo.appendChild(
           createMessage("danger", "Došlo je do greške, pokušajte ponovo.")
