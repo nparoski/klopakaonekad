@@ -112,7 +112,7 @@ btnSendMail.addEventListener("click", e => {
     email: document.getElementById("cfMail").value
   };
 
-  fetch("../php/sendMail.php", {
+  fetch("./php/sendMail.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
