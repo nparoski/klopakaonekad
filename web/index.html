@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143015349-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143015349-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Primary Meta Tags -->
+  <title>Kod Dzona | Brza hrana sa dostavom Futoška 21</title>
+  <meta name="title" content="Kod Dzona | Brza hrana sa dostavom Futoška 21">
+  <meta name="description" content="Kod Dzona fast food sa dostavom, u našem meniju ima za svakog po nešto, burgeri, pljeskavice, sendviči i još mnogo toga. Futoška 21 svaki radni dan od 8 do 17h.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://koddzona.rs">
+  <meta property="og:title" content="Kod Dzona | Brza hrana sa dostavom Futoška 21">
+  <meta property="og:description" content="Kod Dzona fast food sa dostavom, u našem meniju ima za svakog po nešto, burgeri, pljeskavice, sendviči i još mnogo toga. Futoška 21 svaki radni dan od 8 do 17h.">
+  <meta property="og:image" content="./images/logo.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://koddzona.rs">
+  <meta property="twitter:title" content="Kod Dzona | Brza hrana sa dostavom Futoška 21">
+  <meta property="twitter:description" content="Kod Dzona fast food sa dostavom, u našem meniju ima za svakog po nešto, burgeri, pljeskavice, sendviči i još mnogo toga. Futoška 21 svaki radni dan od 8 do 17h.">
+  <meta property="twitter:image" content="./images/logo.jpg">
+  <!-- styles -->
   <link rel="stylesheet" href="stylesheets/style.css">
-  <title>Klopa kao kod kuće - hrana za poneti</title>
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="icon" href="./images/logo.png" type="image/x-icon">
+  <title>Kod Dzona | Brza hrana sa dostavom</title>
 </head>
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#"><img class="w-25" src="images/logo.jpg" alt="logo"></a>
+      <a class="navbar-brand" href="#"><img class="navbar-logo" src="images/logo.png" alt="logo"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,24 +95,21 @@
         <div class="carousel-item active">
           <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Palačinke</h5>
-            <p>Domace palačinke sa kremom i plazmom.</p>
+            <h5>Punjena pljeskavica</h5>
             <a href="#gallery" class="btn mb-2 btn-primary smooth-scroll">Pogledaj više</a>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Testenina</h5>
-            <p>Obarena testenina koju mozete kupiti sa ili bez sosa.</p>
+            <h5>Šiš ćevap</h5>
             <a href="#gallery" class="btn mb-2 btn-primary smooth-scroll">Pogledaj više</a>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Pomfrit</h5>
-            <p>Slani hrskavi pomfrit.</p>
+            <h5>Mali chicken nuggets</h5>
             <a href="#gallery" class="btn mb-2 btn-primary smooth-scroll">Pogledaj više</a>
           </div>
         </div>
@@ -114,14 +142,14 @@
           <img class="w-25" src="images/003-takeaway.svg" alt="">
           <div class="service-caption my-3 text-center">
             <h3 class="text-primary font-primary">Za poneti</h3>
-            <p>Pakujemo hranu za poneti u našu ambalažu po vašoj potrebi, takodje imamo i plastični escajg.</p>
+            <p>Pakujemo hranu za poneti u našu ambalažu po vašoj potrebi.</p>
           </div>
         </div>
         <div class="service d-flex flex-column align-items-center col-12 col-md-4 my-3 my-md-0">
           <img class="w-25" src="images/001-shipped.svg" alt="">
           <div class="service-caption my-3 text-center">
             <h3 class="text-primary font-primary">Dostava</h3>
-            <p>Vršimo dostavu na području Novog Sada, cena dostave je 170 din.</p>
+            <p>Dostava za sve gradske oblasti naplaćuje se 150 dinara, osim za porudžbine preko 1500 dinara.</p>
           </div>
         </div>
       </div>
@@ -132,80 +160,977 @@
   <!-- menu -->
   <section id="menu" class="py-5 bg-dark text-white">
     <div class="container">
-      <h1 class="text-center font-primary">Meni</h1>
-      <div id="menu-controls" class="row justify-content-center my-3">
-        <button id="menu-all" class="btn btn-primary m-1">Sva jela</button>
-        <button id="menu-cooked" class="btn btn-outline-primary m-1">Kuvana jela</button>
-        <button id="menu-baked" class="btn btn-outline-primary m-1">Pečena jela</button>
-        <button id="menu-side-dish" class="btn btn-outline-primary m-1">Prilozi</button>
-        <button id="menu-dessert" class="btn btn-outline-primary m-1">Dezerti</button>
-      </div>
-      <div id="menu-output" class="px-0 col-12 mt-3">
-        <ul class="mt-3 pl-0 row">
-          <div class="menu-item menu-cooked col-12 col-md-6 col-lg-5 mx-auto mt-4">
-            <h1 class="text-primary text-center mb-4 font-primary">Kuvana jela</h1>
-            <li class="d-flex justify-content-between">Pire krompir<span>35din</span></li>
-            <li class="d-flex justify-content-between">Grašak<span>40din</span></li>
-            <li class="d-flex justify-content-between">Boranija<span>40din</span></li>
-            <li class="d-flex justify-content-between">Djuvec<span>45din</span></li>
-            <li class="d-flex justify-content-between">Španat<span>45din</span></li>
-            <li class="d-flex justify-content-between">Gulaš<span>79din</span></li>
-            <li class="d-flex justify-content-between">Paprikaš<span>45din</span></li>
-            <li class="d-flex justify-content-between">Punjena paprika<span>70din</span></li>
-            <li class="d-flex justify-content-between">Sarma<span>70din</span></li>
-            <li class="d-flex justify-content-between">Pasulj sa kobasicom<span>40din</span></li>
-            <li class="d-flex justify-content-between">Ćufte u paradajz sosu<span>70din</span></li>
-            <li class="d-flex justify-content-between">Domaće testo sa krompirom<span>45din</span></li>
-            <li class="d-flex justify-content-between">Šampinjoni u paradajz sosu<span>55din</span></li>
-            <li class="d-flex justify-content-between">Piletina na kineski način<span>75din</span></li>
-            <li class="d-flex justify-content-between">Čuspajz od tikvica <span>50din</span></li>
-          </div>
-          <div class="menu-item menu-baked col-12 col-md-6 col-lg-5 mx-auto mt-4">
-            <h1 class="text-primary text-center mb-4 font-primary">Pečena jela</h1>
-            <li class="d-flex justify-content-between">Oslić <span>89din</span></li>
-            <li class="d-flex justify-content-between">Pohovano belo meso <span>99din</span></li>
-            <li class="d-flex justify-content-between">Pohovano belo meso sa susamom <span>99din</span></li>
-            <li class="d-flex justify-content-between">Karadjordjeve <span>119din</span></li>
-            <li class="d-flex justify-content-between">Batak <span>79din</span></li>
-            <li class="d-flex justify-content-between">Pileća dzigerica <span>65din</span></li>
-            <li class="d-flex justify-content-between">Musaka <span>70din</span></li>
-            <li class="d-flex justify-content-between">Zapečene tikvice <span>70din</span></li>
-            <li class="d-flex justify-content-between">Pohovani kačkavalj <span>99din</span></li>
-            <li class="d-flex justify-content-between">Lazanje <span>79din</span></li>
-            <li class="d-flex justify-content-between">Belo meso sa parmezanom <span>119din</span></li>
-            <li class="d-flex justify-content-between">Rizi bizi <span>50din</span></li>
-            <li class="d-flex justify-content-between">Rižoto sa crvenim pasuljom <span>50din</span></li>
-            <li class="d-flex justify-content-between">Rižoto sa šampinjonima <span>45din</span></li>
-            <li class="d-flex justify-content-between">Podvarak <span>45din</span></li>
-            <li class="d-flex justify-content-between">Grčke paprike <span>60din</span></li>
-            <li class="d-flex justify-content-between">Grilovano povrće <span>50din</span></li>
-            <li class="d-flex justify-content-between">Belo meso u ljutom sosu <span>75din</span></li>
-            <li class="d-flex justify-content-between">Belo meso u sosu od šampinjona <span>75din</span></li>
-          </div>
-          <div class="menu-item menu-side-dish col-12 col-md-6 col-lg-5 mx-auto mt-4">
-            <h1 class="text-primary text-center mb-4 font-primary">Prilozi</h1>
-            <li class="d-flex justify-content-between">Pomfrit <span>60din</span></li>
-            <li class="d-flex justify-content-between">Salata <span>30din</span></li>
-            <li class="d-flex justify-content-between">Testenina <span>20din</span></li>
-            <li class="d-flex justify-content-between">Pečeni krompirići <span>50din</span></li>
-            <li class="d-flex justify-content-between">Kupus salata <span>30din</span></li>
-            <li class="d-flex justify-content-between">Hleb <span>10din/3kom</span></li>
-          </div>
-          <div class="menu-item menu-dessert col-12 col-md-6 col-lg-5 mx-auto mt-4">
-            <h1 class="text-primary text-center mb-4 font-primary">Dezerti</h1>
-            <li class="d-flex justify-content-between">Pohovane palačinke <span>75din</span></li>
-            <li class="d-flex justify-content-between">Pita sa jabukom <span>60din</span></li>
-            <li class="d-flex justify-content-between">Vanila kolač <span>60din/kom</span></li>
-            <li class="d-flex justify-content-between">Čokoladni kolač <span>60din/kom</span></li>
-            <li class="d-flex justify-content-between">Čokoladna keks torta <span>60din/kom</span></li>
-            <li class="d-flex justify-content-between">Pita sa jabukama <span>60din/kom</span></li>
-            <li class="d-flex justify-content-between">Čokoladni kokos kolač <span>60din/kom</span></li>
-            <li class="d-flex justify-content-between">Limun kolač <span>60din/kom</span></li>
-          </div>
-        </ul>
+      <h1 class="text-center font-primary mb-0">Meni</h1>
+      <h4 class="text-center mb-3">Pozovite i naručite sada <a href="tel:0638352023">063/835-20-23</a></h4>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".menu-lokal">Meni za lokal</button>
+        <button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target=".menu-dostava">Meni za dostavu</button>
       </div>
     </div>
   </section>
+  <!-- modal lokal -->
+  <div class="modal fade menu-lokal" tabindex="-1" role="dialog" aria-labelledby="menu-lokal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn btn-danger align-self-end mb-3 rounded-0" data-dismiss="modal"><i class="fas fa-times"></i></button>
+        <h1 class="font-secondary text-center">Meni za lokal</h1>
+        <div class="bg-dark py-3">
+          <h3 class="text-center font-primary text-white">Akcija</h3>
+          <div class="row">  
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-1.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Burger</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 100g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">180,00</p>
+              </div>
+            </div>
+
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-2.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Dupli burger</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 100g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">230,00</p>
+              </div>
+            </div>
+
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-3.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">2 Burgera</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 100g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">280,00</p>
+              </div>
+            </div>
+
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-2.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Dupli burger</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 200g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">280,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav p-2">
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pljeskavica 120g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">150,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Punjena pljeskavica 160g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block">sir, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Ćevapi 5 kom. 180g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Ćevapi 10 kom. 320g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Čizburger 150g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">170,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli čizburger 300g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupla pljeskavica 250g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dimljena kobasica 200g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Đačka pljeskavica 100g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">120,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hot dog 1 viršla</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">90,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hot dog 2 viršla</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">100,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hot dog 3 viršla</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">120,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hot dog 4 viršla</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">150,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Index sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">160,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Index sendvič veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Topli sendvič suvi vrat</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">110,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Topli sendvič kulen</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">120,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Topli sendvič praška šunka</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">100,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Topli sendvič pečenica + <br> pečeno jaje</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">140,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Topli sendvič voz</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">160,00</span>
+            </div>
+            <span class="small d-block">kulen, suvi vrat, praška šunka, sir, šampinjoni</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Ragbi pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">240,00</span>
+            </div>
+            <span class="small d-block">pljeskavica sa pomfritom</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Big burger 250g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">220,00</span>
+            </div>
+            <span class="small d-block">pljeskavica, pečeno jaje, slanina, sir</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli big burger 370g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">290,00</span>
+            </div>
+            <span class="small d-block">Pljeskavica x2, pečeno jaje, slanina, sir</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šiš ćevap mali 90g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">100,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli šiš ćevap 180g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šarba obrok</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">150,00</span>
+            </div>
+            <span class="small d-block">2 pečena jaja, 2 viršle</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">2 pečena jaja sa slaninom <br> u somunu</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">120,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">2 pečena jaja sa praškom <br> šunkom u somunu</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">120,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">2 pečena jaja sa <br>viršlom u somunu</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">120,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">2 pečena jaja sa <br>kulenom u somunu</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">130,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Doručak 4 pečena jaja <br> sa slaninom</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Vegeterijano</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">130,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Sendvič sa tunjevinom</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pomfrit</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">150,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Fish fingers u lepinji 5 kom</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">180,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileće belo meso u somunu 150g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Duplo belo meso u <br> somunu 300g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">350,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileći specijal 200g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small d-block">Pileće belo meso, suvi vrat, šampinjoni</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileći burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">260,00</span>
+            </div>
+            <span class="small d-block">pil. belo meso, slanina, jaje, sir</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Punjeno belo meso</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">suvi vrat, sir</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pohovano belo meso 200g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small d-block"></span>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-danger d-block rounded-0" data-dismiss="modal">Zatvori</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- /modal lokal -->
+  <!-- modal dostava -->
+  <div class="modal fade menu-dostava" tabindex="-1" role="dialog" aria-labelledby="menu-dostava" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn btn-danger align-self-end mb-3 rounded-0" data-dismiss="modal"><i class="fas fa-times"></i></button>
+        <h1 class="font-secondary text-center text-primary">Meni za dostavu</h1>
+        <div class="bg-dark py-3">
+          <h3 class="text-center font-primary text-white">Akcija</h3>
+          <div class="row">  
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-1.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Burger</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 100g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">180,00</p>
+              </div>
+            </div>
+
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-2.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Dupli burger</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 100g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">230,00</p>
+              </div>
+            </div>
+
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-3.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">2 Burgera</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 100g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">280,00</p>
+              </div>
+            </div>
+
+            <div class="food-action d-flex flex-column align-items-center col-6 mt-3">
+              <img class="rounded d-block w-75" src="images/action-food-2.jpg" alt="">
+              <div class="food-action-text text-center">
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Dupli burger</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">+</p>
+                <p class="mb-0 font-weight-bold text-white font-secondary h5">Pomfrit 200g</p>
+                <p class="mb-0 font-weight-bold text-primary font-primary h5">280,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav p-2">
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pljeksavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">180,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Punjena pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, pršuta, trapist</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Velika punjena pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">310,00</span>
+            </div>
+            <span class="small d-block">jun.meso 200g, pršuta,trapist</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupla pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">290,00</span>
+            </div>
+            <span class="small d-block">jun.meso 240g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Domaća pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">jun.meso 140g, trapist, gril, šampinjoni, kulen</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Gurmanska pljeskavica u kifli</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, trapist, kulen, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Ljuta pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, urnebes, čili, sveža i tuc. ljuta paprika</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">XXL Pljeskavica</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">330,00</span>
+            </div>
+            <span class="small d-block">jun.meso 300g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pljeskavica sa pomfritom u kifli</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">290,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, pomfrit 100g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dim. roštilj kobasica u kifli</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">280,00</span>
+            </div>
+            <span class="small d-block">kobasica 200g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pohovano pil. belo meso u kifli</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">280,00</span>
+            </div>
+            <span class="small d-block">belo meso 200g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Cheeseburger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">210,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, trapist 50g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Cheeseburger dupli</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">330,00</span>
+            </div>
+            <span class="small d-block">jun.meso 240g, trapist 100g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šiš ćevap mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">180,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šiš ćevap veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">280,00</span>
+            </div>
+            <span class="small d-block">jun.meso 240g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Cheese šiš ćevap mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">210,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, trapist 50g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli cheese šiš ćevap</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small d-block">jun.meso 240g, trapist 100g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Punjeni šiš ćevap mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small">jun.meso 120g, trapist, pršuta</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli punjeni šiš ćevap</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">340,00</span>
+            </div>
+            <span class="small d-block">jun.meso 120g, trapist, pršuta</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Grill mix 1</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">410,00</span>
+            </div>
+            <span class="small d-block">punj. pljeskavica 160g, roš. kobasica 200g, pomfrit 100g, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Grill mix 2</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">470,00</span>
+            </div>
+            <span class="small d-block">pil. file 100g, roš. kobasica 200g,5 ćevapa, pomfrit 100g, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Grill light mix</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">350,00</span>
+            </div>
+            <span class="small d-block">pil file 200g, grilovano povrće mix 250g, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Classic burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small d-block">jun. meso 90g, trapist 50g, iceberg, kis. krastavac, burger sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">jun. meso 2x90g, trapist 50g, iceberg, kis. krastavac, burger sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Trostruki burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">330,00</span>
+            </div>
+            <span class="small d-block">jun. meso 3x90g, trapist 50g, iceberg, kis. krastavac, burger sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pil. burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small d-block">pil. meso 90g, trapist 50g, iceberg, kis. krastavac, burger sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli pil. burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">pil. meso 2x90g, trapist 50g, iceberg, kis. krastavac, burger sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Trostruki pil. burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">330,00</span>
+            </div>
+            <span class="small d-block">pil. meso 3x90g, trapist 50g, iceberg, kis. krastavac, burger sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Ljuti burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small d-block">jun. meso 90g, trapist 50g, urnebes, iceberg, sveža i tuc. paprika</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli ljuti burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">260,00</span>
+            </div>
+            <span class="small d-block">jun. meso 2x90g, trapist 50g, urnebes, iceberg, sveža i tuc. paprika</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Egg burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small d-block">jun. meso 90g, 1 peč. jaje, trapist, suvi vrat, burger sos, iceberg, krastavci</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Dupli egg burger</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small">jun. meso 2x90g, 1 peč. jaje, trapist, suvi vrat, burger sos, iceberg, krastavci</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Burger obrok</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">360,00</span>
+            </div>
+            <span class="small">jun. meso 2x90g, pomfrit 100g, trapist, burger sos, iceberg, krastavci + Coca Cola 0.25l</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Index sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small">2x praška šunka, trapist 50g, šampinjoni</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Index sendvič veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">280,00</span>
+            </div>
+            <span class="small">3x praška šunka, trapist 50g, šampinjoni</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šareni sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small">1x praška šunka, trapist 50g, šampinjoni, kulen, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šareni sendvič veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">210,00</span>
+            </div>
+            <span class="small">2x praška šunka, trapist 50g, šampinjoni, kulen, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Šareni sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small">1x praška šunka, trapist 50g, šampinjoni, kulen, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileći specijal sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">220,00</span>
+            </div>
+            <span class="small">seckani pil. file 200g, šampinjoni, suvi vrat, pomfrit 100g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileći specijal veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">280,00</span>
+            </div>
+            <span class="small">Seckani pil. file 200g, šampinjoni, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileći specijal veliki + pomfrit</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">320,00</span>
+            </div>
+            <span class="small">seckani pil. file 200g, šampinjoni, suvi vrat, pomfrit 100g</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Pileći specijal obrok</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">360,00</span>
+            </div>
+            <span class="small">seckani pil file 200g, šampinjoni, suvi vrat,pomfrit 100g + Coca Cola 0.25l</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Vojvođanski sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small">kuvano jaje, iceberg, trapist, kulen, sveža paprika</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Vojvođanski sendvič veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">210,00</span>
+            </div>
+            <span class="small">kuvano jaje, iceberg, trapist, kulen, sveža paprika</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Banatski sendvič mali</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">190,00</span>
+            </div>
+            <span class="small">suvi vrat, trapist, kuvano jaje, paradajz, iceberg</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Banatski sendvič veliki</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">210,00</span>
+            </div>
+            <span class="small">suvi vrat, trapist, kuvano jaje, paradajz, iceberg</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Sendvič sa tunjevinom</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small">Tunjevina cela konzerva</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Sendvič fish fingers</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">210,00</span>
+            </div>
+            <span class="small">Fish fingers 5 komada, velika kifla</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Sendvič sa kolutovima lignje</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">290,00</span>
+            </div>
+            <span class="small">Kolutovi lignje 5 komada, velika kifla</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hot dog sa 3 dimljene viršle</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small">3 dim. viršle</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Omlet sa kobasicom u porciji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small">3 pečena jaja, dim. roštilj kob. 200g, pavlaka, senf, paradajz, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Banatski omlet u porciji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small">3 pečena jaja, suvi vrat, pomfrit 100g, pavlaka, senf, paradajz, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Simpatični omlet u porciji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small">3 pečena jaja, suvi vrat, pomfrit 100g, pavlaka, paradajz, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Vojvođanski omlet u porciji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small">3 pečena jaja i suvi vrat, pomfrit 100g, pavlaka, paradajz, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Omlet 2+2 u porciji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small">2 pečena jaja + 2 dimljene viršle, pomfrit 100g, pavlaka, paradajz, kajzerica</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Omlet u lepinji sa suvim vratom</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">170,00</span>
+            </div>
+            <span class="small">2 pečena jaja, suvi vrat</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Devojački san u lepinji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">170,00</span>
+            </div>
+            <span class="small">2 pečena jaja, 1 dim. viršla</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Praški omlet u lepinji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">170,00</span>
+            </div>
+            <span class="small">2 pečena jaja i praška šunka</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Omlet sa kulenom u lepinji</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">180,00</span>
+            </div>
+            <span class="small">2 pečena jaja, kulen</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Omlet u kifli 2+2</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small">2 pečena, 2 dim. viršle</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Mešana salata 400g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">200,00</span>
+            </div>
+            <span class="small">Paradajz, krastavac, sir, paprika</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Cezar salata 400g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">300,00</span>
+            </div>
+            <span class="small">Piletina 100g, paradajz, pršuta, mix zelenih salata, dressing na bazi grčkog jogurta</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Tuna salata 400g</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">250,00</span>
+            </div>
+            <span class="small">Tunjevina 80g, kukuruz 30g, iceberg, 2 pera mladog luka, paprika crvena, kuvano jaje, dressing na bazi majoneza</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hrskavi chicken nuggets</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">230,00</span>
+            </div>
+            <span class="small">5 komada(150g pil. filea) + 100g pomfrita, tartar sos</span>
+          </li>
+          <li class="food-item d-flex flex-column mt-2">
+            <div class="d-flex">
+              <span class="food-name font-weight-bold">Hrskavi chicken nuggets</span>
+              <div class="food-spacer"></div>
+              <span class="food-price text-right">350,00</span>
+            </div>
+            <span class="small">10 komada(300g pil. filea) + 100g pomfrita, tartar sos</span>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-danger d-block rounded-0" data-dismiss="modal">Zatvori</button>
+      </div>
+    </div>
+  </div>
+  <!-- modal dostava -->
   <!-- end of menu -->
 
   <!-- gallery -->
@@ -214,54 +1139,54 @@
       <div id="gallery-main" class="row no-gutters text-center">
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Grilovana piletina</h3>
+            <p class="h3">Simpatični omlet</p>
           </div>
           <img class="d-block w-100" src="images/gallery-1.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Pečeni krompirici</h1>
+            <p class="h3">Mali chicken nuggets</p>
           </div>
           <img class="d-block w-100" src="images/gallery-2.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Lazanje</h1>
+            <p class="h3">Domaća pljeskavica</p>
           </div>
           <img class="d-block w-100" src="images/gallery-3.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Grilovano belo meso</h1>
+            <p class="h3">Klasik burger</p>
           </div>
           <img class="d-block w-100" src="images/gallery-4.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Rižoto sa povrćem</h1>
+            <p class="h3">Grill light mix</p>
           </div>
           <img class="d-block w-100" src="images/gallery-5.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Pohovana piletina</h1>
+            <p class="h4 mb-0">Pljeskavica sa pomfritom u kifli</p>
           </div>
           <img class="d-block w-100" src="images/gallery-6.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Grilovano povrće</h1>
+            <p class="h3">Čizburger</p>
           </div>
           <img class="d-block w-100" src="images/gallery-7.jpg" alt="">
         </div>
         <div class="gallery-item font-primary col-6 col-md-3">
           <div class="gallery-item--overlay d-flex justify-content-center align-items-center" data-toggle="modal" data-target=".gallery-modal">
-            <h1 class="h3">Gulaš</h1>
+            <p class="h3">Dupli burger</p>
           </div>
           <img class="d-block w-100" src="images/gallery-8.jpg" alt="">
         </div>
       </div>
-      <button id="gallery-show-hide-btn" class="btn btn-lg btn-primary d-block mx-auto mt-5">Prikaži više</button>
+      <!-- <button id="gallery-show-hide-btn" class="btn btn-lg btn-primary d-block mx-auto mt-5">Prikaži više</button> -->
     </div>
     <!-- Large modal -->
     <div class="modal fade gallery-modal" tabindex="-1" role="dialog" aria-labelledby="gallery-modal" aria-hidden="true">
@@ -272,49 +1197,49 @@
               <div class="carousel-item">
                 <img src="images/gallery-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Grilovana piletina</p>
+                  <p class="m-2">Simpatični omlet</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Pečeni krompirici</p>
+                  <p class="m-2">Mali chicken nuggets</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Lazanje</p>
+                  <p class="m-2">Domaća pljeskavica</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-4.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Grilovano belo meso</p>
+                  <p class="m-2">Klasik burger</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-5.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Rižoto sa povrćem</p>
+                  <p class="m-2">Grill light mix</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-6.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Pohovana piletina</p>
+                  <p class="m-2">Pljeskavica sa pomfritom u kifli</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-7.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Grilovano povrće</p>
+                  <p class="m-2">Čizburger</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/gallery-8.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <p class="m-2">Gulaš</p>
+                  <p class="m-2">Dupli burger</p>
                 </div>
               </div>
             </div>
@@ -340,20 +1265,19 @@
       <h1 class="text-center mb-0 mb-md-5 font-primary">O nama</h1>
       <div class="row">
         <div class="col-md-6 col-12 mt-md-0 mt-5 text-center">
-          <img class="rounded-circle" src="images/chef-1.jpg" alt="chef one">
+          <img class="rounded-circle" src="images/dzon.jpg" alt="chef one">
           <div class="about-caption">
-            <h3 class="my-3 font-primary">Petar Petric</h3>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi cupiditate mollitia officiis est hic, qui reiciendis. Animi ducimus officiis perferendis numquam, laboriosam repudiandae voluptatibus exercitationem atque, facilis vitae laudantium.</p>
+            <h3 class="my-3 font-primary">Dzon</h3>
           </div>
         </div>
         <div class="col-md-6 col-12 mt-md-0 mt-5 text-center">
-          <img class="rounded-circle" src="images/chef-2.jpg" alt="chef two">
+          <img class="rounded-circle" src="images/srki.jpg" alt="chef two">
           <div class="about-caption">
-            <h3 class="my-3 font-primary">Petra Petric</h3>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi cupiditate mollitia officiis est hic, qui reiciendis. Animi ducimus officiis perferendis numquam, laboriosam repudiandae voluptatibus exercitationem atque, facilis vitae laudantium.</p>
+            <h3 class="my-3 font-primary">Srki</h3>
           </div>
         </div>
       </div>
+      <p>Lokal je počeo sa radom još 2007 godine.... Do sada smo poslovanje uglavnom bazirali na radu sa decom iz nekoliko škola koje se nalaze u našoj blizini a od ove godine posao je proširen i na dostavu tako da smo sada mnogo pristupačniji i zaposlenima. Definitivno smo poznati po jednom od najboljih hot dogova u gradu ali sa novim programom koji smo ubacili, stvarno se može pronaći za svakoga ponešto.... Pozovite nas i uverite se!!!</p>
     </div>
   </section>
   <!-- end of about us -->
@@ -365,32 +1289,34 @@
         <div class="col-12 col-md-6 d-flex flex-column align-items-center py-5 py-md-0 justify-content-center">
           <h1 class="text-center text-primary h3 font-secondary">Kontakt</h1>
           <div class="mb-4 mb-sm-2 mb-lg-4 d-flex flex-column">
-            <a href="mailto:kaokodkuce@gmail.com" class="h5 mb-sm-1 mb-lg-2 text-white"><i class="fas fa-envelope mr-3 text-info"></i>kaokodkuce@gmail.com</a>
-            <a href="https://www.google.com/maps?q=klopa+kao+kod+kuce&rlz=1C1CHBF_enRS834RS834&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj49LS76PngAhUhw4sKHYQKAVUQ_AUIDygC" class="h5 mb-sm-1 mb-lg-2 text-white" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt mr-3 text-info"></i>Cara Dušana 11a</a>
-            <a href="tel:+381-65-506-17-18" class="h5 mb-sm-1 mb-lg-2 text-white"><i class="fas fa-phone mr-3 text-info"></i>065/506-17-88</a>
-            <a href="https://www.facebook.com/klopa.kao.kod.kuce/" class="h5 mb-sm-1 mb-lg-2 text-white" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f mr-3 text-info"></i>klopa.kao.kod.kuce</a>
+            <a href="mailto:koddzona@gmail.com" class="h5 mb-sm-1 mb-lg-2 text-white"><i class="fas fa-envelope mr-3 text-info"></i>koddzona@gmail.com</a>
+            <a href="https://www.google.com/maps/place/Futo%C5%A1ka+21,+Novi+Sad+21000/@45.2496879,19.8310943,17z/data=!3m1!4b1!4m5!3m4!1s0x475b103f61c5c629:0x7f916d79417d507a!8m2!3d45.2496879!4d19.833283" class="h5 mb-sm-1 mb-lg-2 text-white" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt mr-3 text-info"></i>Futoška 21</a>
+            <a href="tel:0638352023" class="h5 mb-sm-1 mb-lg-2 text-white"><i class="fas fa-phone mr-3 text-info"></i>063/835-20-23</a>
+            <a href="https://www.facebook.com/KOD-DZONA-824398324570785/" class="h5 mb-sm-1 mb-lg-2 text-white" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f mr-3 text-info"></i>KOD DZONA</a>
+            <a href="https://www.instagram.com/kod_dzona_/" class="h5 mb-sm-1 mb-lg-2 text-white" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram  mr-3 text-info"></i>@kod_dzona_</a>
           </div>
           <h1 class="text-center text-primary h3 font-secondary">Radno vreme</h1>
-          <h5 class="h5 mb-sm-1 mb-lg-2">Radni dani: od 10:00 do 17:00.</h5>
-          <h5 class="h5 mb-sm-1 mb-lg-2">Vikend: neradni.</h5>
+          <h5 class="h5 mb-sm-1 mb-lg-2">Radni dani - 08 - 17h</h5>
+          <h5 class="h5 mb-sm-1 mb-lg-2">Vikend - neradni</h5>
         </div>
         <img class="w-100 h-50 px-0 col-12 col-md-6 d-none d-md-block" src="images/contact.jpg" alt="">
-        <div id="map" class="col-12 col-md-6 col-lg-6"></div>
-        <form class="col-12 col-sm-10 col-md-6 col-lg-5 m-md-auto">
+        <div id="map" class="col-12 col-md-6 col-lg-6 p-0"><div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=45.2499033,19.8334929&amp;q=21%20Futoska%2C%20Novi%20Sad%2C%20Serbia+(Kod%20Dzona)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe></div><br /></div>
+        <form id="contact-form" class="col-12 col-sm-10 col-md-6 col-lg-5 m-md-auto">
           <h1 class="text-center h2 my-3 text-primary font-secondary">Pošaljite nam poruku</h1>
+          <div id="form-info"></div>
           <div class="form-group d-flex flex-column">
             <label class="" for="cfName">Ime</label>
-            <input class="py-1 pl-1 form-control" type="text" name="" id="cfName" placeholder="Petar Peric">
+            <input class="py-1 pl-1 form-control" type="text" name="name" id="cfName" placeholder="Petar Peric">
           </div>
           <div class="form-group d-flex flex-column">
             <label class="" for="cfMail">E-mail</label>
-            <input class="py-1 pl-1 form-control" type="email" name="" id="cfMail" placeholder="petarperic@email.com">
+            <input class="py-1 pl-1 form-control" type="email" name="email" id="cfMail" placeholder="petarperic@email.com">
           </div>
           <div class="form-group d-flex flex-column">
             <label class="" for="cfMsg">Poruka</label>
-            <textarea class="py-1 pl-1 form-control" name="" id="cfMsg" cols="30" rows="6" placeholder="Tekst poruke"></textarea>
+            <textarea class="py-1 pl-1 form-control" name="message" id="cfMsg" cols="30" rows="6" placeholder="Tekst poruke"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary ml-auto d-block">Pošalji</button>
+          <button type="submit" name="submit" id="btn-send-mail" class="btn btn-primary ml-auto d-block">Pošalji</button>
         </form>
       </div>
     </div>
@@ -403,27 +1329,26 @@
       <div class="row">
         <div class="col-12 col-md-4 mt-3 d-flex flex-column text-center">
           <h5 class="font-weight-normal">Kontakt</h5>
-          <p class="mb-0 text-primary"><i class="fas fa-map-marker-alt mr-2"></i>Cara Dušana 11a</p>
-          <p class="mb-0 text-primary"><i class="fas fa-phone mr-2"></i>065/506-17-88</p>
-          <p class="mb-0 text-primary"><i class="fas fa-envelope mr-2"></i>kaokodkuce@gmail.com</p>
+          <p class="mb-0 text-primary"><i class="fas fa-map-marker-alt mr-2"></i>Futoška 21</p>
+          <p class="mb-0 text-primary"><i class="fas fa-phone mr-2"></i>063/835-20-23</p>
+          <p class="mb-0 text-primary"><i class="fas fa-envelope mr-2"></i>koddzona@gmail.com</p>
         </div>
         <div class="col-12 col-md-4 mt-3 d-flex flex-column text-center">
           <h5 class="font-weight-normal">Korisni linkovi</h5>
-          <a href="https://www.facebook.com/pg/klopa.kao.kod.kuce/reviews/?ref=page_internal" target="_blank" rel="noopener noreferrer">Utisci</a>
-          <a href="https://www.google.com/maps?q=klopa+kao+kod+kuce&rlz=1C1CHBF_enRS834RS834&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi04bWuovDgAhULVhoKHRECCPAQ_AUIDygC" target="_blank" rel="noopener noreferrer">Mapa</a>
+          <a href="https://www.facebook.com/pg/KOD-DZONA-824398324570785/reviews/?ref=page_internal" target="_blank" rel="noopener noreferrer">Utisci</a>
+          <a href="https://www.google.com/maps/place/Futo%C5%A1ka+21,+Novi+Sad+21000/@45.2496879,19.8310943,17z/data=!3m1!4b1!4m5!3m4!1s0x475b103f61c5c629:0x7f916d79417d507a!8m2!3d45.2496879!4d19.833283" target="_blank" rel="noopener noreferrer">Mapa</a>
         </div>
         <div class="col-12 col-md-4 mt-3 d-flex flex-column text-center">
           <h5 class="font-weight-normal">Zapratite nas</h5>
-          <a href="https://www.facebook.com/klopa.kao.kod.kuce/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a class="mt-2" href=""><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/KOD-DZONA-824398324570785/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a class="mt-2" href="https://www.instagram.com/kod_dzona_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
       </div>
     </div>
-    <p class="small text-center text-white-50 mt-3 mb-0">Sva prava zadržana &copy 2019 Klopa kao kod kuce.</p>
+    <p class="small text-center text-white-50 mt-3 mb-0">Sva prava zadržana &copy 2019 Kod Dzona, Izrada <a href="http://neca.me" target="_blank">neca.me</a></p>
   </footer>
   <!-- end of footer -->
   <script src="javascript/main.min.js"></script>
-  <script src="javascript/custom.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsttV95wB8J51m_wIKvOmDOmJg-RkByf0&callback=initMap" async defer></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsttV95wB8J51m_wIKvOmDOmJg-RkByf0&callback=initMap" async defer></script> -->
 </body>
 </html>

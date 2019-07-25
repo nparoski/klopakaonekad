@@ -1,20 +1,21 @@
 // bootstrap
-@import 'custom'; // Custom bootstrap variables
-@import 'bootstrap'; // Bootstrap
+@import "custom"; // Custom bootstrap variables
+@import "bootstrap"; // Bootstrap
 // end of bootstrap
 
 // fontawesome
-@import 'fontawesome';
-@import 'brands';
-@import 'regular';
-@import 'solid';
+@import "fontawesome";
+@import "brands";
+@import "regular";
+@import "solid";
 // end of fontawesome
 
-@import 'abstracts/mixins';
-@import 'base/fonts';
-@import 'base/helpers';
-@import 'components/toTopBtn';
-@import 'components/carousel';
-@import 'components/menu';
-@import 'components/gallery';
-@import 'components/map';
+@import "abstracts/mixins";
+@import "base/fonts";
+@import "base/helpers";
+@import "components/navbar";
+@import "components/toTopBtn";
+@import "components/carousel";
+@import "components/menu";
+@import "components/gallery";
+@import "components/map";
