@@ -18562,41 +18562,50 @@ function removeMessage(delay = 3000) {
 
 // Ajax to php send mail
 
-const btnSendMail = document.getElementById("btn-send-mail");
+const contactForm = document.getElementById("contact-form");
 const formInfo = document.getElementById("form-info");
-btnSendMail.addEventListener("click", e => {
+contactForm.addEventListener("submit", e => {
   e.preventDefault();
-  let data = {
-    name: document.getElementById("cfName").value,
-    msg: document.getElementById("cfMsg").value,
-    email: document.getElementById("cfMail").value
-  };
-
-  fetch("./php/sendMail.php", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-    .then(result => {
-      if (result.ok) {
-        formInfo.appendChild(
-          createMessage("success", "Uspešno ste poslali poruku.")
-        );
-        document.getElementById("cfName").value = "";
-        document.getElementById("cfMsg").value = "";
-        document.getElementById("cfMail").value = "";
-      } else {
-        formInfo.appendChild(
-          createMessage("danger", "Došlo je do greške, pokušajte ponovo.")
-        );
-      }
-      removeMessage(5000);
+  try {
+    let data = {
+      name: document.getElementById("cfName").value,
+      msg: document.getElementById("cfMsg").value,
+      email: document.getElementById("cfMail").value
+    };
+    if (data.name === "" || data.email === "" || data.msg === "") {
+      throw "Morate popuniti sva polja.";
+    }
+    fetch("./php/sendMail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
     })
-    .catch(error => {
-      formInfo.appendChild(createMessage());
-    });
+      .then(result => {
+        if (result.ok) {
+          formInfo.appendChild(
+            createMessage("success", "Uspešno ste poslali poruku.")
+          );
+          document.getElementById("cfName").value = "";
+          document.getElementById("cfMsg").value = "";
+          document.getElementById("cfMail").value = "";
+        } else {
+          formInfo.appendChild(
+            createMessage("danger", "Došlo je do greške, pokušajte ponovo.")
+          );
+        }
+        removeMessage(5000);
+      })
+      .catch(error => {
+        formInfo.appendChild(createMessage());
+      });
+  } catch (e) {
+    if (document.getElementById("statusMessage") === null) {
+      formInfo.appendChild(createMessage("danger", e));
+      removeMessage(5000);
+    }
+  }
 });
 // gallery-lightbox
 const gallery = document.getElementById("gallery-main");
