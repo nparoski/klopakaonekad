@@ -2,59 +2,59 @@
   "images": [
     {
       "id": 1,
-      "title": "Pica",
-      "alt": "Pizza",
+      "title": "",
+      "alt": "",
       "src": "../images/gallery-9.jpg",
-      "caption": "Pica Kaprićoza"
+      "caption": ""
     },
     {
       "id": 2,
-      "title": "Čiz kejk",
-      "alt": "Čiz kejk torta",
-      "src": "../images/gallery-10.jpg",
-      "caption": "Čiz kejk torta šumsko voće"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-10.png",
+      "caption": ""
     },
     {
       "id": 3,
-      "title": "Svinjska rebarca",
-      "alt": "Svinjska rebarca",
-      "src": "../images/gallery-11.jpg",
-      "caption": "Svinjska rebarca u bbq sosu"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-11.png",
+      "caption": ""
     },
     {
       "id": 4,
-      "title": "Vanil torta",
-      "alt": "Vanil torta",
-      "src": "../images/gallery-12.jpg",
-      "caption": "Vanil torta od borovnica"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-12.png",
+      "caption": ""
     },
     {
       "id": 5,
-      "title": "Piletina sa povrćem",
-      "alt": "Piletina sa povrćem",
-      "src": "../images/gallery-13.jpg",
-      "caption": "Piletina sa svežim povrćem"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-13.png",
+      "caption": ""
     },
     {
       "id": 6,
-      "title": "Kineska hrana",
-      "alt": "Kineska hrana",
-      "src": "../images/gallery-14.jpg",
-      "caption": "Belo meso na kineski način"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-14.png",
+      "caption": ""
     },
     {
       "id": 7,
-      "title": "Jafa kolač",
-      "alt": "Jafa kolač",
-      "src": "../images/gallery-15.jpg",
-      "caption": "Jafa kolač"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-15.png",
+      "caption": ""
     },
     {
       "id": 8,
-      "title": "Hamburger",
-      "alt": "Hamburger",
-      "src": "../images/gallery-16.jpg",
-      "caption": "Hamburger sa pomfritom"
+      "title": "",
+      "alt": "",
+      "src": "../images/gallery-16.png",
+      "caption": ""
     }
   ]
 }

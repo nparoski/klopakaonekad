@@ -264,48 +264,48 @@ function createModalItem(imageCaption, imageSrc, imageAlt) {
   modalCarouselInner.appendChild(carouselItem);
 }
 
-// const galleryShowHideBtn = document.getElementById("gallery-show-hide-btn");
-// let galleryBtnState = false;
-// galleryShowHideBtn.addEventListener("click", function() {
-//   if (galleryBtnState === false) {
-//     fetch("../images.json")
-//       .then(response => {
-//         return response.json();
-//       })
-//       .then(data => {
-//         // Work with JSON data here
-//         data.images.forEach(function(image) {
-//           createGalleryItem(image.title, image.src, image.alt);
-//           createModalItem(image.caption, image.src, image.alt);
-//         });
-//       })
-//       .catch(err => {
-//         console.log(
-//           "There was an error loading .json file, please try again..<br>"
-//         );
-//       });
-//     galleryShowHideBtn.textContent = "Prikaži manje";
-//     galleryBtnState = true;
-//   } else {
-//     let reverseModal = Array.from(modalCarouselInner.children).reverse();
-//     let reverseGallery = Array.from(gallery.children).reverse();
+const galleryShowHideBtn = document.getElementById("gallery-show-hide-btn");
+let galleryBtnState = false;
+galleryShowHideBtn.addEventListener("click", function() {
+  if (galleryBtnState === false) {
+    fetch("../images.json")
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        // Work with JSON data here
+        data.images.forEach(function(image) {
+          createGalleryItem(image.title, image.src, image.alt);
+          createModalItem(image.caption, image.src, image.alt);
+        });
+      })
+      .catch(err => {
+        console.log(
+          "There was an error loading .json file, please try again..<br>"
+        );
+      });
+    galleryShowHideBtn.textContent = "Prikaži manje";
+    galleryBtnState = true;
+  } else {
+    let reverseModal = Array.from(modalCarouselInner.children).reverse();
+    let reverseGallery = Array.from(gallery.children).reverse();
 
-//     fetch("../images.json")
-//       .then(response => {
-//         return response.json();
-//       })
-//       .then(data => {
-//         // Work with JSON data here
-//         data.images.forEach(function(image, index, arr) {
-//           gallery.removeChild(reverseGallery[index]);
-//           modalCarouselInner.removeChild(reverseModal[index]);
-//         });
-//       })
-//       .catch(err => {
-//         console.log(err);
-//       });
-//     gallery.scrollIntoView();
-//     galleryShowHideBtn.textContent = "Prikaži više";
-//     galleryBtnState = false;
-//   }
-// });
+    fetch("../images.json")
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        // Work with JSON data here
+        data.images.forEach(function(image, index, arr) {
+          gallery.removeChild(reverseGallery[index]);
+          modalCarouselInner.removeChild(reverseModal[index]);
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    gallery.scrollIntoView();
+    galleryShowHideBtn.textContent = "Prikaži više";
+    galleryBtnState = false;
+  }
+});
