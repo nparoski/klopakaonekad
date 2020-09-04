@@ -23,7 +23,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-strip-debug": "^3.0.0",
     "gulp-terser": "^1.1.7",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
