@@ -7,11 +7,11 @@
     "@fortawesome/fontawesome-free": "^5.2.0",
     "bootstrap": "^4.3.1",
     "featherlight": "^1.7.13",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^4.0.0",
@@ -23,7 +23,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-strip-debug": "^3.0.0",
     "gulp-terser": "^1.1.7",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
